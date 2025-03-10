@@ -1,1 +1,265 @@
-/* место для вашего кода */
+/* ШАПКА */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 90px 50px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 28px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__logo {
+  width: 140px;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__address {
+  justify-self: end;
+  max-width: 240px;
+  font-size: 18px;
+  line-height: 23.3px;
+}
+
+/* СЕКЦИЯ С ОБЛОЖКОЙ */
+
+.cover {
+  position: relative;
+  padding: 165px 50px 50px;
+  background: url(/images/cover.jpg) center / cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background: #000;
+}
+
+.overlay ~ * {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-bottom: 106px;
+  font-size: 100px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.3em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+.aligned-text {
+  text-align: start;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: end;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 14px 32px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+/* СЕКЦИЯ С ЛОТАМИ */
+
+.lots {
+  margin: auto;
+  margin-top: 180px;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  margin-left: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+}
+
+.card_type_film {
+  background: url(/images/card-lot-01.jpg) center / cover no-repeat;
+}
+
+.card_type_book {
+  background: url(/images/card-lot-02.jpg) center / cover no-repeat;
+}
+
+.card_type_picture {
+  background: url(/images/card-lot-03.jpg) center / cover no-repeat;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  height: 596px;
+}
+
+.card__title {
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.lots__look-more-link {
+  margin-left: 40px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* СЕКЦИЯ ОБ АУКЦИОНЕ */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 25px;
+  margin: 120px 0 180px;
+  padding: 35px 24px 0;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: auto;
+  border-radius: 50%;
+  background: #000;
+}
+
+.about__logo-image {
+  width: 145px;
+}
+
+.about__title {
+  margin: 100px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 82px;
+}
+
+.footer__address {
+  justify-self: center;
+  max-width: 265px;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+.footer__menu-list-item {
+  text-align: center;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: center;
+  gap: 48px;
+  padding-left: 25px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
